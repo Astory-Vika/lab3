@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent_gray">#77000000</color>
+    <color name="bright_blue_sky">#00BFFF</color>
+    <color name="vibrant_cherry_red">#FF1744</color>
+    <color name="electric_lime_green">#00E676</color>
+    <color name="deep_violet">#4A148C</color>
+    <color name="soft_violet">#BB5B259D</color>
+    <color name="sunny_yellow">#FFEA00</color>
+    <color name="sakura_pink">#FFFF90BC</color>
+    <color name="soft_sakura_pink">#AAFF90BC</color>
+    <color name="muted_midnight_blue">#304FFE</color>
+</resources>

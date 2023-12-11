@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:transitionName="shared_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_height="300dp" />
+
+        <View
+            android:id="@+id/itemPanelView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/soft_violet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemGuideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/itemGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/sakura_pink"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/itemPanelView"
+            app:layout_constraintStart_toStartOf="@id/itemPanelView"
+            app:layout_constraintTop_toTopOf="@id/itemPanelView" />
+
+        <TextView
+            android:id="@+id/itemScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/sakura_pink"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/itemPanelView"
+            app:layout_constraintStart_toStartOf="@id/itemPanelView"
+            app:layout_constraintTop_toBottomOf="@id/itemTitle" />
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/itemPanelView"
+            app:layout_constraintEnd_toEndOf="@id/itemPanelView"
+            app:layout_constraintStart_toStartOf="@id/itemPanelView"
+            app:layout_constraintTop_toBottomOf="@id/itemScore" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
